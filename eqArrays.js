@@ -20,6 +20,7 @@ const eqArrays = function (input1, input2) {
   return true;
 };
 
+
 console.log(eqArrays(["1", "2", "3"], ["1", "2", 3]));
 console.log(eqArrays(["1", "2", "3"], ["1", "2", "3"]));
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
