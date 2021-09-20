@@ -10,4 +10,5 @@ const tail = function(input) {
     return output;
 };
 
+console.log(tail([1, 2, 3, 4, 5]))
 module.exports = tail;
