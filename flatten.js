@@ -11,3 +11,5 @@ const flatten = function (input) {
   }
   return newArray;
 };
+
+module.exports = flatten;

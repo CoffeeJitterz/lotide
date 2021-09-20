@@ -28,19 +28,21 @@ const map = function(array, callback){
   return results;
 }
 
-//test case 1
-const words = ["ground", "control", "to", "major", "tom"];
-const results1 = map(words, word => word[0]);
-console.log(results1);
+// //test case 1
+// const words = ["ground", "control", "to", "major", "tom"];
+// const results1 = map(words, word => word[0]);
+// console.log(results1);
 
-//test case 2
-const results2 = map(words, word => word += " Bowie Rocks")
-console.log(assertArraysEqual(results2, ["ground Bowie Rocks", "control Bowie Rocks", "to Bowie Rocks", "major Bowie Rocks", "tom Bowie Rocks"]))
+// //test case 2
+// const results2 = map(words, word => word += " Bowie Rocks")
+// console.log(assertArraysEqual(results2, ["ground Bowie Rocks", "control Bowie Rocks", "to Bowie Rocks", "major Bowie Rocks", "tom Bowie Rocks"]))
 
-//test case 3
-const results3 = map(words, word => word = "station to station")
-console.log(assertArraysEqual(results3, ["station to station", "station to station", "station to station", "station to station", "station to station"]))
+// //test case 3
+// const results3 = map(words, word => word = "station to station")
+// console.log(assertArraysEqual(results3, ["station to station", "station to station", "station to station", "station to station", "station to station"]))
 
-//test case 4
-const results4 = map(words, word => word = word + word)
-console.log(assertArraysEqual(results4, ["groundground", "controlcontrol", "toto", "majormajor", "tomtom"]))
+// //test case 4
+// const results4 = map(words, word => word = word + word)
+// console.log(assertArraysEqual(results4, ["groundground", "controlcontrol", "toto", "majormajor", "tomtom"]))
+
+module.exports = map;
